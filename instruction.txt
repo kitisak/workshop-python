@@ -14,7 +14,7 @@ $docker pull python:3.6.5-alpine3.6
 
 2. Run program with docker
 $docker container run --rm -p 5000:5000 -v $(pwd)/web:/src -w /src python:3.6.5-onbuild sh -c "pip install -r requirements.txt && python -u app.py"
-$docker container run --rm -v $(pwd)/web:/src -w /src python:3.6.5-onbuild sh -c "run.sh"
+$docker container run --rm -v $(pwd)/web:/src -w /src python:3.6.5-onbuild sh run.sh
 
 ### Use Docker compose ###
 $docker-compose up
